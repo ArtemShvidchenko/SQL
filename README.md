@@ -7,7 +7,7 @@
 
 # 2
 SELECT 
-	ProductName,
+    ProductName,
     Price
 FROM Products
 WHERE
@@ -15,13 +15,13 @@ WHERE
 
 # 3
 SELECT 
-	(SupplierName,)
+    (SupplierName,)
     Country
 FROM [Suppliers]
 
 # 4
 SELECT 
-	ProductName,
+    ProductName,
     Price,
     Price * .91 AS Price_down
 FROM Products
@@ -30,9 +30,9 @@ WHERE
 
 # 5
 SELECT 
-	ContactName
+   ContactName
 FROM Customers
 WHERE
-	NOT Country='France'
+    NOT Country='France'
     AND
     NOT Country='USA'
